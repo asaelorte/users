@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.users.ui.common.AspectRatioImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:ratio="1"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:textAppearance="?textAppearanceBody1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            tools:text="Asael Ortega" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email:"
+            android:textAppearance="?textAppearanceCaption"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/nameUser"
+            app:layout_constraintTop_toBottomOf="@id/nameUser" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintBaseline_toBaselineOf="@+id/titleEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titleEmail"
+            tools:text="asael@gmail.com" />
+
+        <ImageView
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:contentDescription="divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:srcCompat="@drawable/divider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titlePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="18dp"
+            android:text="Phone:"
+            android:textAppearance="?textAppearanceCaption"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titleEmail"
+            app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintBaseline_toBaselineOf="@+id/titlePhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titlePhone"
+            tools:text="1234" />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:contentDescription="divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:srcCompat="@drawable/divider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/addressTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Addrees:"
+            android:textAppearance="?textAppearanceCaption"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addressTitle"
+            tools:text="Las vegas" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/number"
+            tools:text="Las vegas" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="Las vegas" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/states"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/city"
+            tools:text="Las vegas" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/states"
+            tools:text="Las vegas" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/postcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/country"
+            tools:text="Las vegas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
