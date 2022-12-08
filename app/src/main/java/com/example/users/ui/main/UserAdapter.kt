@@ -32,7 +32,7 @@ class UserAdapter(private val users: List<User>) :
         fun bind(user: User) {
             binding.image.loadUrl(user.picture.large)
             val nameFull = user.name.title + " " + user.name.first + " " + user.name.last
-            binding.name.text = nameFull
+            binding.nameUser.text = nameFull
             binding.email.text = user.email
             binding.phone.text = user.phone
             binding.number.text = user.location.street.number.toString()
